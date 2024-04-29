@@ -1,3 +1,4 @@
+require('dotenv').config(); // Load environment variables from .env file
 const { Client, Intents } = require('discord.js');
 const axios = require('axios');
 const fs = require('fs');
@@ -34,4 +35,4 @@ client.on('interactionCreate', async interaction => {
     }
 });
 
-client.login('MTIzNDM1Mjc1MjEwMDkwMDk2Ng.GvlWHh.5G2rQlvznUQqU3h_0KNFwPMbE9XfO-jgFqP1ow');
+client.login(process.env.DISCORD_TOKEN); // Retrieve token from environment variable
