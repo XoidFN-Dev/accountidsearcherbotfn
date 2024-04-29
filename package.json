@@ -1,0 +1,35 @@
+{
+  "name": "Lookup",
+  "description": "Account ID Lookup Discord Bot for Fortnite",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js & node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "prettier --write \"**/*.js\""
+  },
+  "author": "Xoid",
+  "license": "MIT",
+  "dependencies": {
+    "@discordjs/rest": "^2.2.0",
+    "@replit/database": "^2.0.1",
+    "@supabase/supabase-js": "^2.39.3",
+    "axios": "^0.26.0",
+    "canvas": "^2.8.0",
+    "discord-paginator.js": "^1.0.2",
+    "discord.js": "^13.17.1",
+    "eris": "^0.17.2",
+    "express": "^4.17.3",
+    "fnbr": "^3.1.6",
+    "fnbr.js": "^1.0.1",
+    "fortnite-api-io": "^1.9.0",
+    "jimp": "^0.22.10",
+    "moment": "^2.29.1",
+    "node-schedule": "^2.1.0",
+    "request-promise": "^4.2.6",
+    "serve-handler": "^6.1.5",
+    "simpl.db": "^2.8.1"
+  },
+  "devDependencies": {
+    "prettier": "2.5.1"
+  }
+}
