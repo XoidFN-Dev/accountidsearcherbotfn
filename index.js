@@ -1,13 +1,10 @@
-// Load environment variables from .env file
 require('dotenv').config();
 
 const { Client, Intents } = require('discord.js');
-const axios = require('axios');
 const fs = require('fs');
 
 const client = new Client({ intents: [Intents.FLAGS.GUILDS] });
 
-// Register commands
 const commands = [];
 const commandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('.js'));
 
@@ -16,10 +13,12 @@ for (const file of commandFiles) {
     commands.push(command);
 }
 
-client.once('ready', () => {
+client.once('ready', async () => {
     console.log('Bot is ready');
-    client.application?.commands.set(commands).then(() => {
-        console.log('Commands registered');
+    const guildId = '1234353583152042024'; 
+
+    await client.application?.commands.set(commands).then(() => {
+        console.log('Global commands registered');
     }).catch(console.error);
 });
 
@@ -37,4 +36,4 @@ client.on('interactionCreate', async interaction => {
     }
 });
 
-client.login(process.env.DISCORD_TOKEN); // Retrieve token from environment variable
+client.login(process.env.DISCORD_TOKEN);
