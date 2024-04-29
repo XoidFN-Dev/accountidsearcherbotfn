@@ -1,4 +1,6 @@
-require('dotenv').config(); // Load environment variables from .env file
+// Load environment variables from .env file
+require('dotenv').config();
+
 const { Client, Intents } = require('discord.js');
 const axios = require('axios');
 const fs = require('fs');
