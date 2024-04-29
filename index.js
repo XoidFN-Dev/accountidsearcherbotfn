@@ -34,4 +34,4 @@ client.on('interactionCreate', async interaction => {
     }
 });
 
-client.login('YOUR_BOT_TOKEN');
+client.login('MTIzNDM1Mjc1MjEwMDkwMDk2Ng.GvlWHh.5G2rQlvznUQqU3h_0KNFwPMbE9XfO-jgFqP1ow');
