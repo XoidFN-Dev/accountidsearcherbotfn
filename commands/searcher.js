@@ -18,7 +18,8 @@ module.exports = {
       const url = `https://fortniteapi.io/v2/lookup/advanced?username=${username_encoded}`;
       const headers = {
         'accept': 'application/json',
-        'Authorization': 'YOUR_API_KEY', // Replace with your Fortnite API key
+        'Authorization': '676c33e4-9a4503e4-eb8f12bb-344b4925
+', // Replace with your Fortnite API key
       };
     
       const response = await axios.get(url, { headers });
